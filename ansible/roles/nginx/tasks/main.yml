@@ -1,0 +1,8 @@
+---
+- name: Install nginx
+  apt:
+    name: nginx
+    state: latest
+
+- name: deploying site.html
+  template: src=index.html dest=/var/www/html
